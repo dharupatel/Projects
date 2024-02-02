@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Travel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+<style>
+    body::before {
+        /* background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover; */
+        background: url(n3.jpg) no-repeat center center /cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        /* margin: 10px; */
+        /* padding: 10px; */
+        /* background-color: rgb(153, 173, 173); */
+        /* color: black; */
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+    li {
+        list-style: none;
+        padding: 20px 23px;
+    }
+
+    h1 {
+        font-style: oblique;
+        font-size: 45px;
+        color: rgb(2, 4, 4);
+        margin: 25px;
+        /* padding: 100px; */
+        text-align: center;
+        line-height: 50px;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 3px 30px;
+        justify-content: center;
+        color: beige;
+        font-size: 25px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 100px 10px 10px;
+    }
+
+    .button {
+
+        /* margin: 150px 150px; */
+        color: rgb(57, 53, 53);
+        padding: 4px 14px;
+        border-radius: 3px;
+        font-style: 20px;
+        cursor: pointer;
+        font-family: 'Arial Narrow Bold', sans-serif;
+    }
+
+    .button:hover {
+        background-color: rgb(184, 203, 203);
+
+    }
+
+    .navigation {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: right;
+        position: sticky;
+    }
+
+    .navigation li {
+        display: inline-block;
+        font-size: 20px;
+
+    }
+
+    .navigation li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 30px 20px;
+    }
+
+    .navigation li a:hover,
+    .navigation li a.active {
+        color: gray;
+        text-decoration: underline;
+    }
+
+    div {
+        display: block;
+        margin: 10px 10px 10px 515px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .que {
+        text-align: center;
+        font-size: 45px;
+
+    }
+
+    .grid {
+        display: grid;
+        /* grid-template-rows: 2fr 2fr 2fr; */
+        grid-auto-rows: 3fr;
+        grid-template-columns: repeat(3, 2fr);
+    }
+
+    .Box {
+        /* background-color: rgb(238, 240, 230); */
+        /* border: 2px solid rgb(238, 240, 230); */
+        padding: 10px;
+        margin: 3px 3px 20px;
+        text-align: justify;
+        /* box-sizing: border-box;
+        width: 200px;
+        height: 230px; */
+
+    }
+
+    .p1 {
+        padding: 20px 20px;
+        margin: 20px 30px;
+    }
+
+    p {
+        margin: 10px;
+        padding: 5px;
+        text-align: justify;
+    }
+
+    .center {
+        padding: 10px;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .background {
+        background-color: rgb(238, 240, 230);
+    }
+
+    #more {
+        display: none;
+    }
+
+</style>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="navigation">
+                <li><a herf="#">Home</a></li>
+                <li><a herf="#">Services</a></li>
+                <li><a herf="#">About us</a></li>
+                <li><a herf="#" class="active">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1> Travel With Us</h1>
+        <h3>Explore the world in any direction</h3>
+    </section>
+
+    <div>
+        <button class="button"> Buy now</button>
+        <button class="button">Ways to travel</button>
+    </div>
+
+    <h2 class="h2">Our Journal</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, incidunt deleniti ratione rerum maiores
+        asperiores? Ad accusamus,
+        eaque odit aliquam quasi, voluptatem debitis obcaecati voluptates iste itaque mollitia. Exercitationem,
+        voluptatum?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos itaque totam eos
+        sapiente dolores, eaque sed rerum amet asperiores consequatur dolore animi deleniti, aliquam delectus voluptates
+        ut esse odit!
+    </p>
+    <p1 class="grid">
+        <p1 class="Box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et ad, quas sunt pariatur
+            deleniti a in sit esse,Lorem, ipsum dolor sit amet consectetur adipisicing elit. A corrupti unde quam sequi
+            omnis placeat fugiat recusandae, iste provident eos cumque eligendi totam incidu Repellendus possimus
+            doloribus exercitationem, deserunt nihil sint quam non dicta nemo molestias laudantium atque ducimus,
+            consectetur fugit necessitatibus error? Esse tempore, consequuntur error magni eos incidunt? Nemo veniam
+            repellat ratione quis laboriosam iste tempore doloremque minima quos quasi perferendis, blanditiis sint
+            totam. Voluptas, quos ea! laudantium alias labore odio beatae cum ipsa est. Quaerat saepe repellat ipsa
+            aut!
+        </p1>
+        <p1 class="Box">
+            <img src="n1.jpg" alt="" style="box-sizing: border-box; width: 360px; height: 300px;" >
+
+        </p1>
+        <p1 class="Box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vitae sunt beatae laborum
+            facilis sit asperiores, et officia corrupti dolore. Error temporibus odio accusamusl Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Hic odit ad a excepturi eveniet alias, quasi rerum voluptatibus numquam
+            mollitia ducimus asperiores eligendi unde harum, natus, placeat nesciunt vero ipsa! ut consequatur,
+            reprehenderit sunt inventore quis sint omnis esse officiis magni voluptates soluta enim doloribus iure
+            cumque explicabo nobis amet nisi.</p1>
+        <p1 class="Box">
+            <img src="n2.jpg" alt="" style="box-sizing: border-box; width: 400px; height: 295px;">
+        </p1>
+        <p1 class="Box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At similique quasi voluptatem eos
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni suscipit quaerat vero explicabo nobis
+            molestias pariatur velit ab, tenetur laudantium repellat enim, adipisci nam maiores? Obcaecati accusantium
+            incidunt sit autem!
+            commodi nam sequi provident earum sed suscipit fugit, fugiat eaque culpa placeat voluptatum molestias error.
+            Ullam quo accusantium obcaecati saepe ab fuga quae reiciendis aspernatur nihil quibusdam earum libero
+            assumenda molestiae, doloribus iure exercitationem!</p1>
+        <p1 class="Box">
+            <img src="n3.jpg" alt="" style="box-sizing: border-box; width: 400px; height: 295px;">
+        </p1>
+    </p1>
+
+    <p4 class="center">Travel is the movement of people between distant geographical locations. Travel can be done by
+        foot, bicycle,
+        automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or
+        round trip.</p4>
+
+    <footer class="background">
+        <h2 class="que"> Do You Wanna Go?</h2>
+
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text " name="" placeholder="Email address.....">
+                <button class="button">I WANT</button>
+            </div>
+        </form>
+    </footer>
+
+</body>
+
+</html>

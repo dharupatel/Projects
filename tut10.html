@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Display property</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            border: 2px solid red;
+            margin: auto;
+            width: 1200px;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 34px;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: grey;
+            margin: 4px 0px;
+            padding: 23px;
+            width: 33%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+        .container {
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAMAAABmmnOVAAAA0lBMVEUAAAAEAABP2voEBARS2v8cTVpS3P9N0u5YZWZPXVwSMTlU4/8LDQ1T5f9TZGRYY2UgJCVV6P8TFRUZHR0tMzQNAABASEglKitZampT4P9HU1MzOzsbRlEQHyAcPD8UICMhVVggYV8HFhQtdHMgR0s6pKsfT1Y1hJAjXWkIFxsrd386nbBKxNwYEAxdaG43NS0tanI/rr9CrsdKz901jJ8TJS8jHhURLi8MJitAvMUUKiY2gpVGvc88mqMscYMbKisPDxpPVV4gRD8LHBQNNDA1hIfavFFCAAAEo0lEQVR4nO2Ye3OqOBiHE7EhyP0ilyDW9nAUle1qbVe6tT17Oef7f6V9E9Ba6x8dOiMzO3nGKWmA8Mt7SwAhiUQikUgkEolEIpFIJBKJRCKRSP43KFhRkAJ0KwMjIaNbEdn42ujSEljBeHIDjS4NgfHttxxzEcjozBoY5TegBFqOY3RlDAV9HwhfRH5HCjjTmTg4AeowKAaFOATeiYh5PhqNpnPkOb5xcovhO/5pp5JPp+Pary1YLMUhPH3SlanrulsWv7E7LTwkDxwwHv7OYqq9v6NwXVfN2oq4HvOxz4jo9fv9xDRXKIUnGo2dFLTqueW6CqgV0/To8vsErp61kwBT2Az4AdzxQQQpy4dHlGq2TUPexae5MhNizv5gmk2pvY9ljLYJIX2ionaWwLdFxdcO5pzEBIhQr0XLYNTWuKGgsGU6IeqK9/qMRs2lCkbLhJRqkqxaaQDUJ5Gh4RkRg7rpU2o1k/6eEPW2ueIQyhhlZj9ZLUly306CgkfFn2BEJz0JiiMRDrUt4S08UAkpuM1Fbd2rVtCz29/gXCfmpJ0IlJU7/nwWnhHhOUCg0TomFFSA1U8jmIsrif6A0I7oLUMTGy/izih6H1RCBKQi5T/WZMdMT5bnBlnra3DSRHeLVhq4WV/LHEzM7HdzPIiALLDTxvIzM3k4M49gtuNDoZH5I/14+nOs3RWIiALvODSFiCAENGrHja8Wpn7GEoFWNdGTR/Zpqn8SXE3GUHFRSoNTEXUzpRZ1RKvQk/JjKWCWF3ocP43i1qbIE3eAYULRW8SDCLIXgRhtxt6qJJnw7DhW4kFFpfFdDFDNslGrlRCjsZps4YBTqMT7Ea56CYioHxbSuCmZa0iPCqoWPxE114bUsuw9FjdnKxV4PCqeILBZzA6dwh1DqJeGkUJwck9BZdyafbJ5HUKNhYpZW8e3KNX2WNRmLbcEChomiQ7jhU7I/HoifAErNw/IB1NTS8QblG200Elirv9iGsRJLGIIIkY7RGMEep12IsC4qquiDOIipo0xrmBZJMRUJzi06CFkMVqprqm/DLm0kKs1bBq/1TnMKGUfhv+siNHr4EHdVGDbwBfrxFTtAeXzNvhbY4etH9iiWhTjAFbRsO7kvjpKywiqSktTwNho6BL9BflOWhs0g51VnhvIiPxjJ4s2jpxDpw+F/fg8/NuyVPCBEWyknqERW7R1rn+dyW6Z3++msJGC8FRa7k++hnimSvQeipw0bl/4voxikr4Ly9iPOxqFnclYu+59vttVvgdOObNxuAjz1QqVUIxgQdBYZIvq8JYbF3w7MvVkh3NoBHGavvfJhV6YoWBMyvKf0t3xjSTs+aLj+qdczkPZvwMzUeeDDGqyEjCHeQ43geL53kVfV5fqrOjt6rYXQKZEYRCI9/bLyeA1Y+bqxvL0ZQYkXNIa2Jj8nLilsqh4PPK9FPwFsuyClZQ/6nY2fXUX1aD+msQ7cbW9ZDUX80bo8df1erNdipRF6Obbz7Yv/1/E2Y7Xo6fH3eLXYnvbjYTaD8oczw0D3NHRJyX+vVnBQ/6FBnf+1VcikUgkEolEIpFIJBKJRCKRSCSSC/MfgyJRR7sOn8UAAAAASUVORK5CYII="
+            alt="">
+        <h3>Welcome to dharu's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore enim. Aspernatur aperiam cum reprehenderit!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore enim. Aspernatur aperiam cum reprehenderit!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore enim. Aspernatur aperiam cum reprehenderit!</p>
+        </div>
+    </div>
+</body>
+
+</html>
