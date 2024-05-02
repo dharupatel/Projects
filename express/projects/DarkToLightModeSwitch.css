@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* height: 100h;
+    width: 100vh; */
+}
+
+.sides {
+    /* position: relative; */
+    float: right;
+    text-align: center;
+    height: 597px;
+    width: 606px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.right {
+    position: absolute;
+    background-color: black;
+    color: white;
+
+}
+
+.left {
+    text-align: center;
+    background-color:white;
+    color: black;
+}
+
+.lefttiger {
+    margin-top: 100px;
+    position:relative;
+    font-weight: 700;
+    font-size: 17px;
+    /* background-color: aqua;
+     */
+    /* padding: 20px 30px 300px 20px?; */
+}
+
+.Righttiger {
+    margin-top: 100px;
+    font-size: 17px;
+    font-weight: 700;
+} 
+
+img{
+    max-width: 100%;
+    display: block;
+    align-self: center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    /* margin-left: 20px; */
+}
+
+.switch{
+    margin-top: 10px;
+    font-size: large;
+    float: right;
+}
+
+.inner-switch{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  
+}
+
+.inner-switch-right{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}

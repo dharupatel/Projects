@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(72, 72, 86);
+}
+
+.container {
+    position: absolute;
+    top: 5%;
+    align-items: center;
+}
+
+.icon {
+    position: absolute;
+    background-color: azure;
+    left: 10px;
+    top: 10px;
+    padding: 9px 20px;
+}
+
+.navigation {
+    background-color: azure;
+    position: absolute;
+    left: 10px;
+    top: 47px;
+    padding: 10px 8px 250px 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.home {
+    position: relative;
+    /* background-color: aqua; */
+    top: 35px;
+    /* padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px; */
+    padding: 10px;
+}
+
+.about {
+    position: relative;
+    /* background-color: aqua; */
+    top: 70px;
+    padding: 10px;
+}
+
+.contact {
+    position: relative;
+    /* background-color: aqua; */
+    top: 105px;
+    padding: 10px;
+}
+
+.blog {
+    position: relative;
+    /* background-color: aqua; */
+    top: 140px;
+    padding: 10px;
+}
+
+.location {
+    position: relative;
+    /* background-color: aqua; */
+    top: 175px;
+    padding: 10px;
+}
+
+.home:hover {
+    background-color: brown;
+    color: azure;
+    border-radius: 7px;
+    box-shadow: -2px -2px 0 #d2aaaa;
+}
+
+.about:hover {
+    background-color: orange;
+    color: azure;
+    border-radius: 7px;
+    box-shadow: -2px -2px 0 rgb(231, 205, 157);
+}
+
+.contact:hover {
+    background-color: rgb(159, 190, 113);
+    color: azure;
+    border-radius: 7px;
+    box-shadow: -2px -2px 0 rgb(209, 225, 184);
+}
+
+.blog:hover {
+    background-color: purple;
+    color: azure;
+    border-radius: 7px;
+    box-shadow: -2px -2px 0 rgb(224, 176, 224);
+}
+
+.location:hover {
+    background-color: rgb(86, 153, 182);
+    color: azure;
+    border-radius: 7px;
+    box-shadow: -2px -2px 0 rgb(168, 200, 213);
+}
+

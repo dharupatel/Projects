@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, 
+	initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<button id="throttle">Click Me</button>
+	<script>
+		const btn = document.querySelector("#throttle");
+
+		// Throttling Function
+		const throttleFunction = (func, delay) => {
+
+			// Previously called time of the function
+			let prev = 0;
+			return (...args) => {
+				// Current called time of the function
+				let now = new Date().getTime();
+
+				// Logging the difference
+				// between previously 
+				// called and current called timings
+				console.log(now - prev, delay);
+
+				// If difference is greater
+				// than delay call
+				// the function again.
+				if (now - prev > delay) {
+					prev = now;
+
+					// "..." is the spread
+					// operator here 
+					// returning the function with the 
+spo					// array of arguments
+					return func(...args);
+				}
+			}
+		}
+		btn.addEventListener("click",
+			throttleFunction(() => {
+				console.log("button is clicked")
+			}, 1500));
+	</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ERROR ACCOURS IN THIS CODINGGG.... -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Glitch Effect Tutorial</title>
+
+     <link rel="stylesheet" type="text/css" href="A_GlitchEffect.css">
+</head>
+<body>
+    <div class="word">A_Glitch_Effect </div>
+    <div class="overlay"></div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+    <script type="text/javascript" src="A_GlitchEffect.js"></script>
+</body>
+</html>

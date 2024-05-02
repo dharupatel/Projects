@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(179, 204, 179);
+}
+
+#panel {
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#ptop {
+    padding: 0pc 30%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(91, 133, 91);
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* width: 10%; */
+}
+
+.elem h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.box {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(71, 101, 71);
+    font-weight: 600;
+}
+
+#pbottom {
+    gap: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(71, 101, 71); ;
+    flex-wrap: wrap;
+    padding: 6px;
+    width: 100%;
+    height: 100%;
+    /* height: calc(100%-70px); */
+    /* background-color: rgb(0, 0, 0); */
+}
+
+.bubble {
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(91, 133, 91);
+}
+
+.bubble:hover {
+    background-color: rgb(65, 93, 65);
+    cursor: pointer;
+}
